@@ -53,7 +53,37 @@ The system follows a **three-agent workflow**:
 ---
 
 ## ⚙️ Setup Instructions
+Running the Project
 
-### 1. Install dependencies
-```bash
-pip install -r requirements.txt
+Run the project locally using one command:
+
+uvicorn main:app
+
+
+The API will be available at:
+
+http://127.0.0.1:8000
+
+
+Swagger UI:
+
+http://127.0.0.1:8000/docs
+## Example Prompts to Test the System (3–5)
+
+Find top AI GitHub repositories and weather in Bangalore
+
+Get trending ML repositories and Mumbai weather
+
+Show GitHub AI projects and Delhi weather
+
+Find popular data science repositories and Hyderabad weather
+
+## Known Limitations / Tradeoffs
+
+Sequential execution (no parallel API calls)
+
+No caching of API responses
+
+LLM calls are abstracted for deterministic local execution
+
+Designed for clarity and reliability rather than scale
